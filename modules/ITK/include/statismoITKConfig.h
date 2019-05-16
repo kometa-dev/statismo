@@ -41,7 +41,7 @@
 #include "Config.h"
 
 // in case we are using itk,  we are using the HDF5 version that comes with ITK
-#include "itk_H5Cpp.h"
+#include "itkhdf5/H5Cpp.h"
 
 // prevent standard HDF5 header from being included
 #define _H5CPP_H

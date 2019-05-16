@@ -119,10 +119,11 @@ endif()
 option( ITK_SUPPORT "Build ITK Support" ON )
 
 if( ${ITK_SUPPORT} MATCHES "ON" )
-  find_package( ITK 4.7 REQUIRED )
+  find_package( ITK 4.13 REQUIRED )
   include( ${ITK_USE_FILE} )
 
-  set(HDF5_LIBRARIES itkhdf5 itkhdf5_cpp)
+  #set(HDF5_LIBRARIES ibitkhdf5_debugd itkhdf5_debugd)
+  #set(HDF5_LIBRARIES itkhdf5 itkhdf5_cpp)
 
   add_definitions(-DSTATISMO_ITK_SUPPORT)
 
