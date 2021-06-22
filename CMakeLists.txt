@@ -141,7 +141,6 @@ option( VTK_SUPPORT "Build VTK Support" ON )
 
 if( ${VTK_SUPPORT} MATCHES "ON" )
   find_package( VTK REQUIRED )
-  include( ${VTK_USE_FILE} )
 endif()
 
 option( BUILD_SHARED_LIBS "Build shared libraries" ON )
